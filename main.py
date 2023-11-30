@@ -41,5 +41,5 @@ while good_answer == 1:
         clear_screen()
     else:
         print("Mauvaise réponse, la sequence était : ", random_sequence_str)
-        print("Votre score final : ", score)
+        print(f"Votre score final : {score}")  # Utilisation des f string
         good_answer = 0
