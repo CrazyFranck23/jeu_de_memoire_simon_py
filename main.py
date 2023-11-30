@@ -2,13 +2,6 @@ import random
 import time
 import os
 
-""" Generation d'un nbr aléatoire, un premier nb est généré, puis converti en string ensuite ajouté a la variable 
-random_sequence_str et ainsi de suite jusqu'a obtenir 4 et sortir de la boucle """
-random_sequence_str = ""
-for i in range(4):
-    n = random.randint(0, 9)
-    random_sequence_str += str(n)
-
 
 # Cette fonction permet d'efffacer ce qui est afficher dans le terminal selon le system
 def clear_screen():
@@ -18,7 +11,15 @@ def clear_screen():
         os.system('cls')  # System Windows
 
 
-# random_sequence_str = "5454"
+print("Bienvenue - Jeu du Simon")
+
+""" Generation d'un nbr aléatoire, un premier nb est généré, puis converti en string ensuite ajouté a la variable 
+random_sequence_str et ainsi de suite jusqu'a obtenir 4 et sortir de la boucle """
+random_sequence_str = ""
+for i in range(4):
+    n = random.randint(0, 9)
+    random_sequence_str += str(n)
+
 score = 0
 good_answer = 1
 
